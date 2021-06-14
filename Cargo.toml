@@ -1,0 +1,11 @@
+[package]
+name = "layered-bitset"
+version = "0.1.0"
+authors = ["zaqde"]
+edition = "2018"
+
+[features]
+default = ["alloc"]
+alloc = []
+
+[dependencies]
