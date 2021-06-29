@@ -1,8 +1,16 @@
 [package]
 name = "layered-bitset"
 version = "0.1.0"
-authors = ["zaqde"]
+authors = ["Zakarum <zakarumych@ya.ru>"]
 edition = "2018"
+license = "MIT OR Apache-2.0"
+documentation = "https://docs.rs/layered-bitset"
+homepage = "https://github.com/zakarumych/layered-bitset"
+repository = "https://github.com/zakarumych/layered-bitset"
+readme = "README.md"
+description = "Bit set implementation using layered structure"
+categories = ["algorithms", "no-std"]
+keywords = ["bitset"]
 
 [features]
 default = ["alloc"]
