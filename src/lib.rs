@@ -1,4 +1,5 @@
 #![cfg_attr(not(test), no_std)]
+#![deprecated(note = "use `bitsetium` crate instead")]
 
 #[cfg(feature = "alloc")]
 extern crate alloc;
