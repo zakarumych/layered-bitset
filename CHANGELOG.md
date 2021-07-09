@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1]
+
+### Fixed
+
+Fixed set operation for layered bit set.
+
+## [0.1.0]
+
 ### Added
 
 - Traits for bitsets: `BitSet` and `BitSetMut` which allows mutation.
