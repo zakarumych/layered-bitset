@@ -94,16 +94,15 @@ where
     fn set(&mut self, index: u32, bit: bool) {
         assert!(index < Self::UPPER_BOUND);
         let t = index / B::UPPER_BOUND;
+        let u = index % B::UPPER_BOUND;
 
         if bit {
             if !self.top.get(t) {
                 self.top.set(t, true);
-                let u = index % B::UPPER_BOUND;
-                self.bottom[t as usize].set(u, true)
             }
+            self.bottom[t as usize].set(u, true)
         } else {
             if self.top.get(t) {
-                let u = index % B::UPPER_BOUND;
                 self.bottom[t as usize].set(u, false);
                 if self.bottom[t as usize].is_empty() {
                     self.top.set(t, false);
